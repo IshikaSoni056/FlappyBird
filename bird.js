@@ -11,7 +11,7 @@ let bird = {
   height: 34
 };
 let birdImg = new Image();
-birdImg.src = "Images/bird.png";
+birdImg.src = Images/bird.png";
 
 // Pipe setup
 let topPipeImg = new Image();
