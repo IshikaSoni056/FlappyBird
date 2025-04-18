@@ -198,17 +198,22 @@ function handleGameOver() {
     wingSound.pause();
     hitSound.play();
 
-    db.ref("scores/" + playerId).set({
-        name: playerName,
-        score: score,
-        timestamp: Date.now()
-    });
+    //  Delay writing to Firebase to ensure final score is accurate
+    setTimeout(() => {
+        db.ref("scores/" + playerId).set({
+            name: playerName,
+            score: score,
+            timestamp: Date.now()
+        });
 
-    if (score > highScore) {
-        highScore = score;
-        highScorePlayer = playerName;
-    }
+        //  Update local high score
+        if (score > highScore) {
+            highScore = score;
+            highScorePlayer = playerName;
+        }
+    }, 300); // delay of 300ms
 }
+
 
 function startPipeSpawner() {
     function spawn() {
