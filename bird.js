@@ -9,7 +9,7 @@ let bird = {
 };
 
 let birdImg = new Image();
-birdImg.src = "Images/bird.png";
+birdImg.src = "/Images/bird.png";
 
 let pipeArray = [];
 let pipeWidth = 64, pipeHeight = 512;
@@ -20,10 +20,10 @@ let gameOver = false;
 let highScorePlayer = "Unknown";
 
 let topPipeImg = new Image();
-topPipeImg.src = "Images/top.jpeg";
+topPipeImg.src = "/top.jpeg";
 
 let bottomPipeImg = new Image();
-bottomPipeImg.src = "Images/bottom.jpeg";
+bottomPipeImg.src = "/Images/bottom.jpeg";
 
 let playerName = "";
 let playerId = "";
