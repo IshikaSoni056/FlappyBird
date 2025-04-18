@@ -4,13 +4,13 @@ let boardHeight = window.innerHeight;
 
 let bird = { x: boardWidth / 8, y: boardHeight / 2, width: 44, height: 34 };
 let birdImg = new Image();
-birdImg.src = "images/bird.png";
+birdImg.src = "Images/bird.png";
 
 let topPipeImg = new Image();
-topPipeImg.src = "images/top.jpeg";
+topPipeImg.src = "Images/top.jpeg";
 
 let bottomPipeImg = new Image();
-bottomPipeImg.src = "images/bottom.jpeg";
+bottomPipeImg.src = "Images/bottom.jpeg";
 
 let pipeArray = [];
 let pipeWidth = 64, pipeHeight = 512;
