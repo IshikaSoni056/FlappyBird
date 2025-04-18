@@ -15,9 +15,9 @@ birdImg.src = "Images/bird.png";
 
 // Pipe setup
 let topPipeImg = new Image();
-topPipeImg.src = "./Images/top.jpeg";
+topPipeImg.src = "Images/top.jpeg";
 let bottomPipeImg = new Image();
-bottomPipeImg.src = "./Images/bottom.jpeg";
+bottomPipeImg.src = "Images/bottom.jpeg";
 
 let pipeArray = [];
 let pipeWidth = 64;
