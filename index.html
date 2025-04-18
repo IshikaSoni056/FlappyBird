@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flappy Bird with Firebase</title>
+  <link rel="stylesheet" href="bird.css" />
+</head>
+<body>
+
+  <div id="startScreen">
+    <h2>Enter Your Name to Start</h2>
+    <input type="text" id="playerName" placeholder="Your name" />
+    <button onclick="startGame()">Start Game</button>
+  </div>
+
+  <canvas id="board"></canvas>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-database-compat.js"></script>
+
+  <!-- Game Code -->
+  <script src="bird.js"></script>
+</body>
+</html>
