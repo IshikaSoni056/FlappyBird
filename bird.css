@@ -1,37 +1,52 @@
-body{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    background: skyblue;
+hhtml, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* ✅ Prevent scrollbars */
+  background: skyblue;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
 }
-#board{
-    /* background-color: skyblue; */
-    background-image: url('Images/bg.png');
-}body {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    background: skyblue;
-}
-
-#startScreen {
-    margin-top: 100px;
-}
-
-#playerName {
-    padding: 8px;
-    font-size: 16px;
-}
-
-button {
-    padding: 8px 16px;
-    font-size: 16px;
+  
+  #startScreen {
+    margin-top: 80px;
+    padding: 20px;
+  }
+  
+  #playerName {
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
     margin-top: 10px;
     cursor: pointer;
-}
-
-#board {
+    touch-action: manipulation;
+  }
+  
+  #board {
     display: none;
-    background-image: url('Images/bg.png');
-    margin: 20px auto;
+    margin: 0 auto;
     display: block;
     border: 2px solid white;
-}
+    background-image: url("Images/bg.png");
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 600px) {
+    #playerName, button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+  
